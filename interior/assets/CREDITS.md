@@ -1,0 +1,31 @@
+# Interior assets: credits
+
+All files in this folder are processed copies (resized, KTX2/meshopt compressed) of CC0 1.0 assets. CC0 needs no attribution; it is recorded here anyway.
+Poly Haven licence: https://polyhaven.com/license. ambientCG licence: https://docs.ambientcg.com/license/.
+
+| id | name | source | page | downloaded from | licence | author(s) |
+|---|---|---|---|---|---|---|
+| `plank_flooring_04` | Plank Flooring 04 | Poly Haven | https://polyhaven.com/a/plank_flooring_04 | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plank_flooring_04/plank_flooring_04_diff_2k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plank_flooring_04/plank_flooring_04_nor_gl_2k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/plank_flooring_04/plank_flooring_04_rough_2k.jpg | CC0 1.0 | Dimitrios Savva |
+| `Carpet016` | Carpet 016 | ambientCG | https://ambientcg.com/view?id=Carpet016 | https://ambientcg.com/get?file=Carpet016_2K-JPG.zip | CC0 1.0 | ambientCG |
+| `Granite005A` | Granite 005 A | ambientCG | https://ambientcg.com/view?id=Granite005A | https://ambientcg.com/get?file=Granite005A_1K-JPG.zip | CC0 1.0 | ambientCG |
+| `oak_veneer_05` | Oak Veneer 05 | Poly Haven | https://polyhaven.com/a/oak_veneer_05 | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/oak_veneer_05/oak_veneer_05_diff_1k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/oak_veneer_05/oak_veneer_05_nor_gl_1k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/oak_veneer_05/oak_veneer_05_rough_1k.jpg | CC0 1.0 | Jenelle van Heerden |
+| `Concrete034` | Concrete 034 | ambientCG | https://ambientcg.com/view?id=Concrete034 | https://ambientcg.com/get?file=Concrete034_1K-JPG.zip | CC0 1.0 | ambientCG |
+| `Tiles036` | Tiles 036 | ambientCG | https://ambientcg.com/view?id=Tiles036 | https://ambientcg.com/get?file=Tiles036_1K-JPG.zip | CC0 1.0 | ambientCG |
+| `white_plaster_02` | White Plaster 02 | Poly Haven | https://polyhaven.com/a/white_plaster_02 | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/white_plaster_02/white_plaster_02_nor_gl_1k.jpg | CC0 1.0 | Rob Tuytel |
+| `rough_linen` | Rough Linen | Poly Haven | https://polyhaven.com/a/rough_linen | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rough_linen/rough_linen_nor_gl_1k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rough_linen/rough_linen_rough_1k.jpg | CC0 1.0 | colormass, Rico Cilliers |
+| `curly_teddy_natural` | Curly Teddy Natural | Poly Haven | https://polyhaven.com/a/curly_teddy_natural | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/curly_teddy_natural/curly_teddy_natural_diff_1k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/curly_teddy_natural/curly_teddy_natural_nor_gl_1k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/curly_teddy_natural/curly_teddy_natural_rough_1k.jpg | CC0 1.0 | colormass, Rico Cilliers |
+| `Fabric045` | Fabric 045 | ambientCG | https://ambientcg.com/view?id=Fabric045 | https://ambientcg.com/get?file=Fabric045_1K-JPG.zip | CC0 1.0 | ambientCG |
+| `Travertine009` | Travertine 009 | ambientCG | https://ambientcg.com/view?id=Travertine009 | https://ambientcg.com/get?file=Travertine009_1K-JPG.zip | CC0 1.0 | ambientCG |
+| `terry_cloth` | Terry Cloth | Poly Haven | https://polyhaven.com/a/terry_cloth | https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_nor_gl_1k.jpg https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/terry_cloth/terry_cloth_rough_1k.jpg | CC0 1.0 | colormass, Rico Cilliers |
+| `side_table_01` | Side Table 01 | Poly Haven | https://polyhaven.com/a/side_table_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/side_table_01/side_table_01_1k.gltf | CC0 1.0 | James Ray Cock |
+| `modern_wooden_cabinet` | Modern Wooden Cabinet | Poly Haven | https://polyhaven.com/a/modern_wooden_cabinet | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modern_wooden_cabinet/modern_wooden_cabinet_1k.gltf | CC0 1.0 | Patrik Pangerl |
+| `modern_arm_chair_01` | Modern Arm Chair 01 | Poly Haven | https://polyhaven.com/a/modern_arm_chair_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modern_arm_chair_01/modern_arm_chair_01_1k.gltf | CC0 1.0 | Vibrant Nordic |
+| `modern_ceiling_lamp_01` | Modern Ceiling Lamp 01 | Poly Haven | https://polyhaven.com/a/modern_ceiling_lamp_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/modern_ceiling_lamp_01/modern_ceiling_lamp_01_1k.gltf | CC0 1.0 | James Ray Cock |
+| `potted_plant_02` | Potted Plant 02 | Poly Haven | https://polyhaven.com/a/potted_plant_02 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/potted_plant_02/potted_plant_02_1k.gltf | CC0 1.0 | Rico Cilliers |
+| `potted_plant_04` | Potted Plant 04 | Poly Haven | https://polyhaven.com/a/potted_plant_04 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/potted_plant_04/potted_plant_04_1k.gltf | CC0 1.0 | James Ray Cock |
+| `throw_pillows_01` | Throw Pillows 01 | Poly Haven | https://polyhaven.com/a/throw_pillows_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/throw_pillows_01/throw_pillows_01_1k.gltf | CC0 1.0 | Serhii Khromov |
+| `hanging_picture_frame_01` | Hanging Picture Frame 01 | Poly Haven | https://polyhaven.com/a/hanging_picture_frame_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/hanging_picture_frame_01/hanging_picture_frame_01_1k.gltf | CC0 1.0 | James Ray Cock |
+| `standing_picture_frame_01` | Standing Picture Frame 01 | Poly Haven | https://polyhaven.com/a/standing_picture_frame_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/standing_picture_frame_01/standing_picture_frame_01_1k.gltf | CC0 1.0 | James Ray Cock |
+| `ceramic_vase_01` | Ceramic Vase 01 | Poly Haven | https://polyhaven.com/a/ceramic_vase_01 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/ceramic_vase_01/ceramic_vase_01_1k.gltf | CC0 1.0 | James Ray Cock |
+| `ceramic_vase_04` | Ceramic Vase 04 | Poly Haven | https://polyhaven.com/a/ceramic_vase_04 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/ceramic_vase_04/ceramic_vase_04_1k.gltf | CC0 1.0 | James Ray Cock |
+| `wooden_bowl_02` | Wooden Bowl 02 | Poly Haven | https://polyhaven.com/a/wooden_bowl_02 | https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/wooden_bowl_02/wooden_bowl_02_1k.gltf | CC0 1.0 | Kuutti Siitonen |

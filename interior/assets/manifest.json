@@ -1,0 +1,336 @@
+{
+ "tex": {
+  "plank_flooring_04": {
+   "size": 2048,
+   "maps": {
+    "c": "plank_flooring_04_c.ktx2",
+    "cLite": "plank_flooring_04_c-lite.ktx2",
+    "n": "plank_flooring_04_n.ktx2",
+    "nLite": "plank_flooring_04_n-lite.ktx2",
+    "r": "plank_flooring_04_r.ktx2",
+    "rLite": "plank_flooring_04_r-lite.ktx2"
+   },
+   "bytes": 2760722,
+   "liteBytes": 387602,
+   "mean": [
+    64,
+    36,
+    22
+   ],
+   "dims": [
+    2000,
+    2000
+   ]
+  },
+  "Carpet016": {
+   "size": 2048,
+   "maps": {
+    "c": "Carpet016_c.ktx2",
+    "cLite": "Carpet016_c-lite.ktx2",
+    "n": "Carpet016_n.ktx2",
+    "nLite": "Carpet016_n-lite.ktx2",
+    "r": "Carpet016_r.ktx2",
+    "rLite": "Carpet016_r-lite.ktx2"
+   },
+   "bytes": 2451784,
+   "liteBytes": 638657,
+   "mean": [
+    187,
+    176,
+    148
+   ],
+   "dims": [
+    170,
+    170,
+    0
+   ]
+  },
+  "Granite005A": {
+   "size": 1024,
+   "maps": {
+    "c": "Granite005A_c.ktx2",
+    "n": "Granite005A_n.ktx2",
+    "r": "Granite005A_r.ktx2"
+   },
+   "bytes": 869719,
+   "liteBytes": 0,
+   "mean": [
+    161,
+    153,
+    154
+   ],
+   "dims": [
+    0,
+    0,
+    0
+   ]
+  },
+  "oak_veneer_05": {
+   "size": 1024,
+   "maps": {
+    "c": "oak_veneer_05_c.ktx2",
+    "n": "oak_veneer_05_n.ktx2",
+    "r": "oak_veneer_05_r.ktx2"
+   },
+   "bytes": 395849,
+   "liteBytes": 0,
+   "mean": [
+    169,
+    139,
+    113
+   ],
+   "dims": [
+    1000,
+    1000
+   ]
+  },
+  "Concrete034": {
+   "size": 1024,
+   "maps": {
+    "c": "Concrete034_c.ktx2",
+    "n": "Concrete034_n.ktx2",
+    "r": "Concrete034_r.ktx2"
+   },
+   "bytes": 299276,
+   "liteBytes": 0,
+   "mean": [
+    184,
+    184,
+    184
+   ],
+   "dims": [
+    110,
+    55,
+    0
+   ]
+  },
+  "Tiles036": {
+   "size": 1024,
+   "maps": {
+    "c": "Tiles036_c.ktx2",
+    "n": "Tiles036_n.ktx2",
+    "r": "Tiles036_r.ktx2"
+   },
+   "bytes": 286919,
+   "liteBytes": 0,
+   "mean": [
+    206,
+    206,
+    206
+   ],
+   "dims": [
+    0,
+    0,
+    0
+   ]
+  },
+  "white_plaster_02": {
+   "size": 1024,
+   "maps": {
+    "n": "white_plaster_02_n.ktx2"
+   },
+   "bytes": 210186,
+   "liteBytes": 0,
+   "dims": [
+    1000,
+    1000
+   ]
+  },
+  "rough_linen": {
+   "size": 1024,
+   "maps": {
+    "n": "rough_linen_n.ktx2",
+    "r": "rough_linen_r.ktx2"
+   },
+   "bytes": 387436,
+   "liteBytes": 0,
+   "dims": [
+    270.7081392676629,
+    271.29998803138733
+   ]
+  },
+  "curly_teddy_natural": {
+   "size": 1024,
+   "maps": {
+    "c": "curly_teddy_natural_c.ktx2",
+    "n": "curly_teddy_natural_n.ktx2",
+    "r": "curly_teddy_natural_r.ktx2"
+   },
+   "bytes": 627129,
+   "liteBytes": 0,
+   "mean": [
+    233,
+    211,
+    187
+   ],
+   "dims": [
+    335.804452696631,
+    330.90004324913025
+   ]
+  },
+  "Fabric045": {
+   "size": 1024,
+   "maps": {
+    "c": "Fabric045_c.ktx2",
+    "n": "Fabric045_n.ktx2",
+    "r": "Fabric045_r.ktx2"
+   },
+   "bytes": 701618,
+   "liteBytes": 0,
+   "mean": [
+    196,
+    195,
+    193
+   ],
+   "dims": [
+    0,
+    0,
+    0
+   ]
+  },
+  "Travertine009": {
+   "size": 1024,
+   "maps": {
+    "c": "Travertine009_c.ktx2",
+    "n": "Travertine009_n.ktx2",
+    "r": "Travertine009_r.ktx2"
+   },
+   "bytes": 268376,
+   "liteBytes": 0,
+   "mean": [
+    223,
+    203,
+    172
+   ],
+   "dims": [
+    120,
+    120,
+    0
+   ]
+  },
+  "terry_cloth": {
+   "size": 1024,
+   "maps": {
+    "n": "terry_cloth_n.ktx2",
+    "r": "terry_cloth_r.ktx2"
+   },
+   "bytes": 430013,
+   "liteBytes": 0,
+   "dims": [
+    367.0535953781794,
+    363.20000886917114
+   ]
+  }
+ },
+ "models": {
+  "side_table_01": {
+   "bytes": 502152,
+   "size": 1024,
+   "dims": [
+    550.0000715255737,
+    450.00001788139343,
+    550.6622816901654
+   ]
+  },
+  "modern_wooden_cabinet": {
+   "bytes": 626768,
+   "size": 1024,
+   "dims": [
+    2440.0004148483276,
+    520.0000107288361,
+    680.1425069570541
+   ]
+  },
+  "modern_arm_chair_01": {
+   "bytes": 885848,
+   "size": 1024,
+   "dims": [
+    820.3444182872772,
+    986.5616858005524,
+    1022.8520567470696
+   ]
+  },
+  "modern_ceiling_lamp_01": {
+   "bytes": 150920,
+   "size": 512,
+   "dims": [
+    431.6493272781372,
+    431.6607564687729,
+    951.5514969825745
+   ]
+  },
+  "potted_plant_02": {
+   "bytes": 1152976,
+   "size": 1024,
+   "dims": [
+    701.1570334434509,
+    657.3865860700607,
+    841.1787391305552
+   ]
+  },
+  "potted_plant_04": {
+   "bytes": 251340,
+   "size": 512,
+   "dims": [
+    170.27407884597778,
+    185.9453096985817,
+    267.5964875961654
+   ]
+  },
+  "throw_pillows_01": {
+   "bytes": 790340,
+   "size": 1024,
+   "dims": [
+    1021.5678811073303,
+    627.4925470352173,
+    450.1592831220478
+   ]
+  },
+  "hanging_picture_frame_01": {
+   "bytes": 350724,
+   "size": 1024,
+   "dims": [
+    593.999981880188,
+    15.749315607536118,
+    840.999960899353
+   ]
+  },
+  "standing_picture_frame_01": {
+   "bytes": 157292,
+   "size": 512,
+   "dims": [
+    200.7998451590538,
+    100.2768762409687,
+    249.65811520814896
+   ]
+  },
+  "ceramic_vase_01": {
+   "bytes": 93420,
+   "size": 512,
+   "dims": [
+    204.87193763256073,
+    206.37669414281845,
+    401.379804010503
+   ]
+  },
+  "ceramic_vase_04": {
+   "bytes": 191492,
+   "size": 512,
+   "dims": [
+    183.31684917211533,
+    181.98027461767197,
+    342.3411250114441
+   ]
+  },
+  "wooden_bowl_02": {
+   "bytes": 260876,
+   "size": 512,
+   "dims": [
+    130.71347028017044,
+    124.53967705368996,
+    73.09794479806442
+   ]
+  }
+ },
+ "totalBytes": 16129434
+}
