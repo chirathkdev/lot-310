@@ -20,6 +20,10 @@ input[type=password]:focus{outline:2px solid var(--accent);outline-offset:1px}
 button{font:inherit;font-weight:600;color:#fff;background:var(--accent);border:0;border-radius:6px;padding:10px 12px;cursor:pointer}
 button:disabled{opacity:.6;cursor:progress}
 #msg{min-height:1.2em;font-size:13px;color:var(--bad)}
+#prog{display:grid;gap:6px;font-size:13px;color:var(--muted)}
+#prog[hidden]{display:none}
+#bar{height:4px;border-radius:2px;background:var(--line);overflow:hidden}
+#bar i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
 </style>
 </head>
 <body>
@@ -29,13 +33,15 @@ button:disabled{opacity:.6;cursor:progress}
   <label>Password<input id="pw" type="password" autocomplete="current-password" required autofocus></label>
   <label class="row"><input id="keep" type="checkbox"> Keep me signed in on this device</label>
   <button id="go" type="submit">Open</button>
+  <div id="prog" role="status" aria-live="polite" hidden><span id="ptext">Checking password…</span><div id="bar" aria-hidden="true"><i id="pbar"></i></div></div>
   <div id="msg" role="status"></div>
 </form>
 <script>
-const SALT = 'iuE+0pcvmzdmzBc5ZRyq/A==', ITER = 600000, STILLS = ["back_yard","bathroom","bed1","dining","ensuite","kitchen","living","pool","side_yard","street_day","street_dusk"], STORE = 'lot310-key';
+const SALT = 'BXxEKsmslJMA4USYZCGBiw==', ITER = 600000, STILLS = ["back_yard","bathroom","bed1","dining","ensuite","kitchen","living","pool","side_yard","street_day","street_dusk"], STORE = 'lot310-key';
 const unb64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
 const b64 = u => btoa(String.fromCharCode(...u));
 const msg = document.getElementById('msg'), go = document.getElementById('go');
+const prog = (t, pct) => { const p = document.getElementById('prog'); if (t == null){ p.hidden = true; return; } p.hidden = false; document.getElementById('ptext').textContent = t; document.getElementById('pbar').style.width = (pct ?? 0) + '%'; };
 const get = k => { try { return sessionStorage.getItem(k) || localStorage.getItem(k); } catch { return null; } };
 const forget = () => { try { sessionStorage.removeItem(STORE); localStorage.removeItem(STORE); } catch {} };
 
@@ -46,9 +52,16 @@ async function derive(pw){
 async function open(raw, keep){
   const key = await crypto.subtle.importKey('raw', raw, 'AES-GCM', false, ['decrypt']);
   const unseal = async buf => { const u = new Uint8Array(buf); return crypto.subtle.decrypt({ name: 'AES-GCM', iv: u.slice(0, 12) }, key, u.slice(12)); };
+  prog('Downloading the 3D page…', 5);
   const res = await fetch('page.bin', { cache: 'no-cache' });
   if (!res.ok) throw new Error('fetch');
-  const html = new TextDecoder().decode(await unseal(await res.arrayBuffer()));   // throws on a wrong password
+  // stream it so the bar shows real progress (Content-Length may be missing behind compression; then it just fills at the end)
+  const total = +res.headers.get('content-length') || 0, chunks = []; let got = 0;
+  if (res.body && total){ const rd = res.body.getReader(); for (;;){ const { done, value } = await rd.read(); if (done) break; chunks.push(value); got += value.length; prog(`Downloading the 3D page… ${Math.round(got / total * 100)}%`, 5 + got / total * 80); } }
+  const buf = total ? (() => { const b = new Uint8Array(got); let o = 0; for (const c of chunks){ b.set(c, o); o += c.length; } return b.buffer; })() : await res.arrayBuffer();
+  prog('Unlocking…', 90);
+  const html = new TextDecoder().decode(await unseal(buf));   // throws on a wrong password
+  prog('Starting the 3D view…', 100);
   try { sessionStorage.setItem(STORE, b64(raw)); if (keep) localStorage.setItem(STORE, b64(raw)); } catch {}
   // photos: decrypted in the background; the page asks window.__still(name) and is filled in as each arrives
   const urls = {}, blank = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
@@ -61,12 +74,12 @@ async function open(raw, keep){
 }
 
 const saved = get(STORE);
-if (saved) { go.disabled = true; msg.textContent = ''; open(unb64(saved), false).catch(() => { forget(); go.disabled = false; }); }
+if (saved) { go.disabled = true; msg.textContent = ''; open(unb64(saved), false).catch(() => { forget(); prog(null); go.disabled = false; }); }
 
 document.getElementById('f').addEventListener('submit', async e => {
-  e.preventDefault(); go.disabled = true; msg.textContent = '';
+  e.preventDefault(); go.disabled = true; msg.textContent = ''; prog('Checking password…', 2);
   try { await open(await derive(document.getElementById('pw').value), document.getElementById('keep').checked); }
-  catch (err) { msg.textContent = err.message === 'fetch' ? 'Could not load the page. Check your connection and try again.' : 'That password is not right.'; go.disabled = false; }
+  catch (err) { prog(null); msg.textContent = err.message === 'fetch' ? 'Could not load the page. Check your connection and try again.' : 'That password is not right.'; go.disabled = false; }
 });
 </script>
 </body>
