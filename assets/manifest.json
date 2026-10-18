@@ -220,6 +220,115 @@
     367.0535953781794,
     363.20000886917114
    ]
+  },
+  "asphalt_02": {
+   "size": 1024,
+   "maps": {
+    "c": "asphalt_02_c.ktx2",
+    "r": "asphalt_02_r.ktx2"
+   },
+   "bytes": 417022,
+   "liteBytes": 0,
+   "mean": [
+    91,
+    90,
+    84
+   ],
+   "dims": [
+    3000.000238418579,
+    3000
+   ]
+  },
+  "concrete_pavement": {
+   "size": 1024,
+   "maps": {
+    "c": "concrete_pavement_c.ktx2",
+    "r": "concrete_pavement_r.ktx2"
+   },
+   "bytes": 354979,
+   "liteBytes": 0,
+   "mean": [
+    127,
+    116,
+    102
+   ],
+   "dims": [
+    1800.0000715255737,
+    1800.0000715255737
+   ]
+  },
+  "pebble_embedded_concrete": {
+   "size": 1024,
+   "maps": {
+    "c": "pebble_embedded_concrete_c.ktx2",
+    "r": "pebble_embedded_concrete_r.ktx2"
+   },
+   "bytes": 392672,
+   "liteBytes": 0,
+   "mean": [
+    92,
+    81,
+    66
+   ],
+   "dims": [
+    2599.9999046325684,
+    2599.9999046325684
+   ]
+  },
+  "red_brick_03": {
+   "size": 1024,
+   "maps": {
+    "c": "red_brick_03_c.ktx2",
+    "r": "red_brick_03_r.ktx2"
+   },
+   "bytes": 409941,
+   "liteBytes": 0,
+   "mean": [
+    105,
+    83,
+    75
+   ],
+   "dims": [
+    1000,
+    1000
+   ]
+  },
+  "brown_brick_02": {
+   "size": 1024,
+   "maps": {
+    "c": "brown_brick_02_c.ktx2",
+    "r": "brown_brick_02_r.ktx2"
+   },
+   "bytes": 438851,
+   "liteBytes": 0,
+   "mean": [
+    182,
+    146,
+    105
+   ],
+   "dims": [
+    1000,
+    1000
+   ]
+  },
+  "Grass004": {
+   "size": 1024,
+   "maps": {
+    "c": "Grass004_c.ktx2",
+    "r": "Grass004_r.ktx2"
+   },
+   "bytes": 458063,
+   "liteBytes": 0,
+   "mean": [
+    96,
+    109,
+    48
+   ],
+   "dims": [
+    140,
+    140,
+    0
+   ]
   }
  },
  "models": {
@@ -332,5 +441,5 @@
    ]
   }
  },
- "totalBytes": 16129434
+ "totalBytes": 18600962
 }
